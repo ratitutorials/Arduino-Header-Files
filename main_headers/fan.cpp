@@ -1,10 +1,18 @@
 
 #include "Arduino.h"
+#include <EEPROM.h>
 #include "fan.h"
 
-const uint8_t fan_pin = 2;
+
+int getEEPROM_value(uint8_t addressValue){
+  return EEPROM.read(addressValue);
+}
+
+const int fan_pin = getEEPROM_value(12);
+
 
 fclass::fclass(){
+  uint8_t vu;
 }
 
 void fclass::SETUP(){

@@ -4,7 +4,7 @@
 #include "Arduino.h"
 #include "fan.h"
 #include "motor.h"
-
+#include <EEPROM.h>
 
 //---------------- Setup ---------------------------------//
 void setup(){
